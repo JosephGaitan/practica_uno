@@ -179,6 +179,6 @@ Este proyecto fue creado como práctica de HTML y CSS básico. Incluye todas las
 
 ---
 
-**Autor**: Joseph Z Gaitan  
+**Autor**: Joseph Z. Gaitán Mosquera  
 **Fecha**: 2025  
 **Asignatura**: Interfaces Gráficas
