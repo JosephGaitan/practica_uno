@@ -1,0 +1,248 @@
+/* Estilos para la practica 1 - Letras */
+/* Hecho por Jose Garcia */
+
+/* Reset basico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 25);
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Container principal */
+.container {
+    width: 95%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(240, 93, 80);
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+header h1 a {
+    color: rgb(240, 93, 80);
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: rgba(240, 93, 80, 0.5);
+}
+
+/* Menu de navegacion */
+nav {
+    background-color: #f5f5f5;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 25);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgba(0, 0, 25, 0.5);
+}
+
+/* Pagina activa en el menu */
+nav ul li.active a {
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px 0;
+    min-height: 60vh;
+}
+
+/* Titulos */
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+/* Parrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Imagenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.image-caption {
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9em;
+    color: rgba(0, 0, 25, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Citas */
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 20px 0;
+    padding: 15px 20px;
+    border-left: 4px solid rgb(240, 93, 80);
+    background-color: #f9f9f9;
+}
+
+/* Texto en cursiva para citas inline */
+cite, em {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+/* Enlaces */
+a {
+    color: rgb(240, 93, 80);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(240, 93, 80, 0.5);
+}
+
+/* Listas */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Listas anidadas */
+ul ul, ol ol {
+    margin: 5px 0;
+}
+
+ul ul li, ol ol li {
+    color: rgba(0, 0, 25, 0.5);
+}
+
+/* Lista de descripcion */
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Años en las listas de descripcion */
+dt:first-child {
+    color: rgba(0, 0, 25, 0.5);
+}
+
+/* Algunos estilos extra */
+strong {
+    font-weight: bold;
+}
+
+.destacado {
+    background-color: #f0f0f0;
+    padding: 5px;
+}
+
+/* Videos */
+.video-container {
+    text-align: center;
+    margin: 25px 0;
+}
+
+iframe {
+    max-width: 100%;
+    height: 315px;
+    width: 560px;
+}
+
+/* Pie de pagina */
+footer {
+    background-color: rgb(0, 0, 25);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(240, 93, 80);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .container {
+        width: 98%;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
